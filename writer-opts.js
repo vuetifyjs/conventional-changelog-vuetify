@@ -33,32 +33,34 @@ function getWriterOpts () {
         discard = false
       })
 
-      if (commit.type === 'feat') {
-        commit.title = ':rocket: Features'
-      } else if (commit.type === 'fix') {
-        commit.title = ':wrench: Bug Fixes'
-      } else if (commit.type === 'perf') {
-        commit.title = 'Performance Improvements'
-      } else if (commit.type === 'revert' || commit.revert) {
-        commit.title = ':arrows_counterclockwise: Reverts'
-      } else if (commit.type === 'refactor') {
-        commit.title = 'Code Refactoring'
-      } else if (commit.type === 'chore') {
-        commit.title = 'Chores'
-      } else if (discard) {
-        return
-      } else if (commit.type === 'docs') {
-        commit.title = 'Documentation'
-      } else if (commit.type === 'style') {
-        commit.title = 'Styles'
-      } else if (commit.type === 'test') {
-        commit.title = 'Tests'
-      } else if (commit.type === 'build') {
-        commit.title = 'Build System'
-      } else if (commit.type === 'ci') {
-        commit.title = 'Continuous Integration'
+      const showAlways = {
+        feat: ':rocket: Features',
+        fix: ':wrench: Bug Fixes',
+        perf: ':fire: Performance Improvements',
+        revert: ':arrows_counterclockwise: Reverts',
+        refactor: ':microscope: Code Refactoring',
+        // chore: 'Chores',
+      }
+
+      const showBreaking = {
+        docs: 'Documentation',
+        style: 'Code Style',
+        test: 'Tests',
+        build: 'Build System',
+        ci: 'Continuous Integration',
+      }
+
+      if (commit.revert) {
+        commit.title = showAlways.revert
+      } else if (Object.keys(showAlways).includes(commit.type)) {
+        commit.title = showAlways[commit.type]
+      } else if (Object.keys(showBreaking).includes(commit.type)) {
+        if (discard) return
+        commit.title = showBreaking[commit.type]
       } else {
-        commit.title = commit.type
+        commit.title = 'Other Commmits'
+        commit.subject = commit.header
+        commit.scope = null
       }
 
       if (commit.scope === '*') {

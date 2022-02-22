@@ -11,12 +11,12 @@ exports[`vuetify preset > should not discard commit if there is BREAKING CHANGE 
 * more tests ([0000001](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000001))
 
 
-### Code Refactoring
+### :microscope: Code Refactoring
 
 * **code:** change a lot of code ([0000002](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000002))
 
 
-### Styles
+### Code Style
 
 * **whitespace:** make it easier to read ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
 
@@ -57,7 +57,7 @@ exports[`vuetify preset > should not discard commit if there is BREAKING CHANGE 
 * **ngOptions:** bad commit ([0000015](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000015))
 
 
-### Performance Improvements
+### :fire: Performance Improvements
 
 * **ngOptions:** make it faster ([0000016](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000016)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
 
@@ -104,7 +104,7 @@ exports[`vuetify preset > should remove the issues that already appear in the su
 * **ngOptions:** bad commit ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
 
 
-### Performance Improvements
+### :fire: Performance Improvements
 
 * **ngOptions:** make it faster ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
 
@@ -152,7 +152,7 @@ exports[`vuetify preset > should replace #[0-9]+ with GitHub issue URL 1`] = `
 * **ngOptions:** bad commit ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
 
 
-### Performance Improvements
+### :fire: Performance Improvements
 
 * **ngOptions:** make it faster ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
 
@@ -202,7 +202,7 @@ exports[`vuetify preset > should replace @username with GitHub user URL 1`] = `
 * **ngOptions:** bad commit ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))
 
 
-### Performance Improvements
+### :fire: Performance Improvements
 
 * **ngOptions:** make it faster ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
 
@@ -244,7 +244,7 @@ exports[`vuetify preset > should work if there is no semver tag 1`] = `
 * **ngOptions:** bad commit ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
 
 
-### Performance Improvements
+### :fire: Performance Improvements
 
 * **ngOptions:** make it faster ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
 
