@@ -34,29 +34,31 @@ function getWriterOpts () {
       })
 
       if (commit.type === 'feat') {
-        commit.type = 'Features'
+        commit.title = ':rocket: Features'
       } else if (commit.type === 'fix') {
-        commit.type = 'Bug Fixes'
+        commit.title = ':wrench: Bug Fixes'
       } else if (commit.type === 'perf') {
-        commit.type = 'Performance Improvements'
+        commit.title = 'Performance Improvements'
       } else if (commit.type === 'revert' || commit.revert) {
-        commit.type = 'Reverts'
+        commit.title = ':arrows_counterclockwise: Reverts'
       } else if (commit.type === 'refactor') {
-        commit.type = 'Code Refactoring'
+        commit.title = 'Code Refactoring'
       } else if (commit.type === 'chore') {
-        commit.type = 'Chores'
+        commit.title = 'Chores'
       } else if (discard) {
         return
       } else if (commit.type === 'docs') {
-        commit.type = 'Documentation'
+        commit.title = 'Documentation'
       } else if (commit.type === 'style') {
-        commit.type = 'Styles'
+        commit.title = 'Styles'
       } else if (commit.type === 'test') {
-        commit.type = 'Tests'
+        commit.title = 'Tests'
       } else if (commit.type === 'build') {
-        commit.type = 'Build System'
+        commit.title = 'Build System'
       } else if (commit.type === 'ci') {
-        commit.type = 'Continuous Integration'
+        commit.title = 'Continuous Integration'
+      } else {
+        commit.title = commit.type
       }
 
       if (commit.scope === '*') {
@@ -102,8 +104,8 @@ function getWriterOpts () {
 
       return commit
     },
-    groupBy: 'type',
-    commitGroupsSort: 'title',
+    groupBy: 'title',
+    commitGroupsSort: 'type',
     commitsSort: ['scope', 'subject'],
     noteGroupsSort: 'title',
     notesSort: compareFunc,
