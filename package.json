@@ -1,0 +1,63 @@
+{
+  "name": "conventional-changelog-vuetify",
+  "version": "1.0.0",
+  "description": "conventional-changelog vuetify preset",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ignore-path .gitignore",
+    "test": "c8 mocha --timeout 5000 test{,/*}.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vuetifyjs/conventional-changelog-vuetify.git"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "vuetify",
+    "preset"
+  ],
+  "files": [
+    "conventional-changelog.js",
+    "conventional-recommended-bump.js",
+    "index.js",
+    "parser-opts.js",
+    "writer-opts.js",
+    "templates"
+  ],
+  "author": "Kael Watts-Deuchar",
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vuetifyjs/conventional-changelog-vuetify/issues"
+  },
+  "homepage": "https://github.com/vuetifyjs/conventional-changelog-vuetify#readme",
+  "dependencies": {
+    "compare-func": "^2.0.0",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "better-than-before": "^1.0.0",
+    "c8": "^7.1.2",
+    "chai": "^4.2.0",
+    "conventional-changelog-core": "^4.2.4",
+    "eslint": "^7.0.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "git-dummy-commit": "^1.2.0",
+    "git-tails": "^1.0.0",
+    "mkdirp": "^1.0.0",
+    "mocha": "^8.0.0",
+    "shelljs": "^0.8.0",
+    "through2": "^4.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "git-dummy-commit>shelljs": "0.8.5"
+    }
+  }
+}

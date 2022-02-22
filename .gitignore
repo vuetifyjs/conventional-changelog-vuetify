@@ -1,0 +1,8 @@
+node_modules/
+.nyc_output/
+coverage/
+tmp/
+
+.idea
+.vscode
+.DS_Store
