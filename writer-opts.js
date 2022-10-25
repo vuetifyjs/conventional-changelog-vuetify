@@ -22,6 +22,25 @@ module.exports = Q.all([
     return writerOpts
   })
 
+// const groupOrder = ['feat', 'fix', 'revert', 'refactor', 'perf', 'chore', 'test', 'docs', 'style', 'ci', 'build', 'Other Commits']
+const groupOrder = [':rocket: Features', ':wrench: Bug Fixes', ':fire: Performance Improvements', ':microscope: Code Refactoring', ':arrows_counterclockwise: Reverts', 'Other Commits']
+const showAlways = {
+  feat: ':rocket: Features',
+  fix: ':wrench: Bug Fixes',
+  perf: ':fire: Performance Improvements',
+  revert: ':arrows_counterclockwise: Reverts',
+  refactor: ':microscope: Code Refactoring',
+  // chore: 'Chores',
+}
+
+const showBreaking = {
+  // docs: 'Documentation',
+  // style: 'Code Style',
+  // test: 'Tests',
+  // build: 'Build System',
+  // ci: 'Continuous Integration',
+}
+
 function getWriterOpts () {
   return {
     transform: (commit, context) => {
@@ -30,25 +49,10 @@ function getWriterOpts () {
 
       commit.notes.forEach(note => {
         note.title = 'BREAKING CHANGES'
+        // note.text = commit.subject + ': ' + note.text
+        note.scope = commit.scope === '*' ? '' : commit.scope
         discard = false
       })
-
-      const showAlways = {
-        feat: ':rocket: Features',
-        fix: ':wrench: Bug Fixes',
-        perf: ':fire: Performance Improvements',
-        revert: ':arrows_counterclockwise: Reverts',
-        refactor: ':microscope: Code Refactoring',
-        // chore: 'Chores',
-      }
-
-      const showBreaking = {
-        docs: 'Documentation',
-        style: 'Code Style',
-        test: 'Tests',
-        build: 'Build System',
-        ci: 'Continuous Integration',
-      }
 
       if (commit.revert) {
         commit.title = showAlways.revert
@@ -107,8 +111,20 @@ function getWriterOpts () {
       return commit
     },
     groupBy: 'title',
-    commitGroupsSort: 'type',
-    commitsSort: ['scope', 'subject'],
+    commitGroupsSort: (a, b) => {
+      const aIndex = groupOrder.indexOf(a.title)
+      const bIndex = groupOrder.indexOf(b.title)
+      return (~aIndex && ~bIndex) ? aIndex - bIndex : a.title.localeCompare(b.title)
+    },
+    commitsSort: (a, b) => {
+      if (!a.scope && b.scope) return -1
+      if (a.scope && !b.scope) return 1
+      if (a.scope && b.scope) {
+        return a.scope.localeCompare(b.scope)
+      } else {
+        return 0
+      }
+    },
     noteGroupsSort: 'title',
     notesSort: compareFunc,
   }

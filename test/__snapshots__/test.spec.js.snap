@@ -3,63 +3,47 @@
 exports[`vuetify preset > parses both default (Revert "<subject>") and custom (revert: <subject>) revert commits 1`] = ``;
 
 exports[`vuetify preset > should not discard commit if there is BREAKING CHANGE 1`] = `
-# 1.0.0 (2022-02-22)
-
-
-### Tests
-
-* more tests ([0000001](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000001))
-
-
-### :microscope: Code Refactoring
-
-* **code:** change a lot of code ([0000002](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000002))
-
-
-### Code Style
-
-* **whitespace:** make it easier to read ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
-
-
-### Documentation
-
-* **readme:** make it clear ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004))
-
-
-### Continuous Integration
-
-* **travis:** add TravisCI pipeline ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
-* **travis:** setup travis ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
-
-
-### Build System
-
-* first build setup ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))
-* **npm:** edit build script ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008))
+# 1.0.0 (2022-10-25)
 
 
 ### :rocket: Features
 
-* amazing new module ([0000009](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000009))
-* **awesome:** addresses the issue brought up in [#133](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/133) ([0000010](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000010))
-* **awesome:** fix [#88](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/88) ([0000011](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000011))
-* **awesome:** issue brought up by [@bcoe](https://github.com/bcoe)! on Friday ([0000012](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000012))
+* amazing new module ([0000001](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000001))
+* **awesome:** issue brought up by [@bcoe](https://github.com/bcoe)! on Friday ([0000002](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000002))
+* **awesome:** fix [#88](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/88) ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
+* **awesome:** addresses the issue brought up in [#133](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/133) ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004))
 
 
 ### :wrench: Bug Fixes
 
-* **compile:** avoid a bug ([0000013](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000013))
-* oops ([0000014](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000014))
-
-
-### :arrows_counterclockwise: Reverts
-
-* **ngOptions:** bad commit ([0000015](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000015))
+* oops ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
+* **compile:** avoid a bug ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
 
 
 ### :fire: Performance Improvements
 
-* **ngOptions:** make it faster ([0000016](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000016)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
+* **ngOptions:** make it faster ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
+
+
+### :microscope: Code Refactoring
+
+* **code:** change a lot of code ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008))
+
+
+### :arrows_counterclockwise: Reverts
+
+* **ngOptions:** bad commit ([0000009](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000009))
+
+
+### Other Commmits
+
+* test(*): more tests ([0000010](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000010))
+* style(whitespace): make it easier to read ([0000011](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000011))
+* docs(readme): make it clear ([0000012](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000012))
+* ci(travis): setup travis ([0000013](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000013))
+* build(npm): edit build script ([0000014](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000014))
+* ci(travis): add TravisCI pipeline ([0000015](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000015))
+* build: first build setup ([0000016](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000016))
 
 
 ### BREAKING CHANGES
@@ -83,40 +67,36 @@ exports[`vuetify preset > should not discard commit if there is BREAKING CHANGE 
 exports[`vuetify preset > should only replace with link to user if it is an username 1`] = ``;
 
 exports[`vuetify preset > should remove the issues that already appear in the subject 1`] = `
-# 1.0.0 (2022-02-22)
+# 1.0.0 (2022-10-25)
 
 
 ### :rocket: Features
 
 * amazing new module ([0000001](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000001))
-* **awesome:** addresses the issue brought up in [#133](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/133) ([0000002](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000002))
-* **awesome:** fix [#88](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/88) ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
+* **awesome:** fix [#88](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/88) ([0000002](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000002))
+* **awesome:** addresses the issue brought up in [#133](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/133) ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
 
 
 ### :wrench: Bug Fixes
 
-* **compile:** avoid a bug ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004))
-* oops ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
-
-
-### :arrows_counterclockwise: Reverts
-
-* **ngOptions:** bad commit ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
+* oops ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004))
+* **compile:** avoid a bug ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
 
 
 ### :fire: Performance Improvements
 
-* **ngOptions:** make it faster ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
+* **ngOptions:** make it faster ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
 
 
-### Continuous Integration
+### :arrows_counterclockwise: Reverts
 
-* **travis:** add TravisCI pipeline ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008))
+* **ngOptions:** bad commit ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))
 
 
-### Build System
+### Other Commmits
 
-* first build setup ([0000009](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000009))
+* ci(travis): add TravisCI pipeline ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008))
+* build: first build setup ([0000009](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000009))
 
 
 ### BREAKING CHANGES
@@ -132,7 +112,7 @@ exports[`vuetify preset > should remove the issues that already appear in the su
 `;
 
 exports[`vuetify preset > should replace #[0-9]+ with GitHub issue URL 1`] = `
-# 1.0.0 (2022-02-22)
+# 1.0.0 (2022-10-25)
 
 
 ### :rocket: Features
@@ -143,28 +123,24 @@ exports[`vuetify preset > should replace #[0-9]+ with GitHub issue URL 1`] = `
 
 ### :wrench: Bug Fixes
 
-* **compile:** avoid a bug ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
-* oops ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004))
-
-
-### :arrows_counterclockwise: Reverts
-
-* **ngOptions:** bad commit ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
+* oops ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
+* **compile:** avoid a bug ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004))
 
 
 ### :fire: Performance Improvements
 
-* **ngOptions:** make it faster ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
+* **ngOptions:** make it faster ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
 
 
-### Continuous Integration
+### :arrows_counterclockwise: Reverts
 
-* **travis:** add TravisCI pipeline ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))
+* **ngOptions:** bad commit ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
 
 
-### Build System
+### Other Commmits
 
-* first build setup ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008))
+* ci(travis): add TravisCI pipeline ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))
+* build: first build setup ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008))
 
 
 ### BREAKING CHANGES
@@ -180,41 +156,37 @@ exports[`vuetify preset > should replace #[0-9]+ with GitHub issue URL 1`] = `
 `;
 
 exports[`vuetify preset > should replace @username with GitHub user URL 1`] = `
-# 1.0.0 (2022-02-22)
+# 1.0.0 (2022-10-25)
 
 
 ### :rocket: Features
 
 * amazing new module ([0000001](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000001))
-* **awesome:** addresses the issue brought up in [#133](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/133) ([0000002](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000002))
+* **awesome:** issue brought up by [@bcoe](https://github.com/bcoe)! on Friday ([0000002](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000002))
 * **awesome:** fix [#88](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/88) ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
-* **awesome:** issue brought up by [@bcoe](https://github.com/bcoe)! on Friday ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004))
+* **awesome:** addresses the issue brought up in [#133](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/133) ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004))
 
 
 ### :wrench: Bug Fixes
 
-* **compile:** avoid a bug ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
-* oops ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
-
-
-### :arrows_counterclockwise: Reverts
-
-* **ngOptions:** bad commit ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))
+* oops ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
+* **compile:** avoid a bug ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
 
 
 ### :fire: Performance Improvements
 
-* **ngOptions:** make it faster ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
+* **ngOptions:** make it faster ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
 
 
-### Continuous Integration
+### :arrows_counterclockwise: Reverts
 
-* **travis:** add TravisCI pipeline ([0000009](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000009))
+* **ngOptions:** bad commit ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008))
 
 
-### Build System
+### Other Commmits
 
-* first build setup ([0000010](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000010))
+* ci(travis): add TravisCI pipeline ([0000009](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000009))
+* build: first build setup ([0000010](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000010))
 
 
 ### BREAKING CHANGES
@@ -230,18 +202,18 @@ exports[`vuetify preset > should replace @username with GitHub user URL 1`] = `
 `;
 
 exports[`vuetify preset > should work if there is no semver tag 1`] = `
-# 1.0.0 (2022-02-22)
+# 1.0.0 (2022-10-25)
+
+
+### :rocket: Features
+
+* amazing new module ([0000001](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000001))
 
 
 ### :wrench: Bug Fixes
 
-* **compile:** avoid a bug ([0000001](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000001))
 * oops ([0000002](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000002))
-
-
-### :arrows_counterclockwise: Reverts
-
-* **ngOptions:** bad commit ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
+* **compile:** avoid a bug ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
 
 
 ### :fire: Performance Improvements
@@ -249,19 +221,15 @@ exports[`vuetify preset > should work if there is no semver tag 1`] = `
 * **ngOptions:** make it faster ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004)), closes [#1](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/1) [#2](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/2)
 
 
-### :rocket: Features
+### :arrows_counterclockwise: Reverts
 
-* amazing new module ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
-
-
-### Continuous Integration
-
-* **travis:** add TravisCI pipeline ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
+* **ngOptions:** bad commit ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
 
 
-### Build System
+### Other Commmits
 
-* first build setup ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))
+* ci(travis): add TravisCI pipeline ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
+* build: first build setup ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))
 
 
 ### BREAKING CHANGES

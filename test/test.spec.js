@@ -31,7 +31,7 @@ betterThanBefore.setups([
     gitDummyCommit(['fix(compile): avoid a bug', 'BREAKING CHANGE: The Change is huge.'])
     gitDummyCommit(['perf(ngOptions): make it faster', ' closes #1, #2'])
     gitDummyCommit('revert(ngOptions): bad commit')
-    gitDummyCommit('fix(*): oops')
+    gitDummyCommit('fix: oops')
   },
   () => {
     gitDummyCommit(['feat(awesome): addresses the issue brought up in #133'])
