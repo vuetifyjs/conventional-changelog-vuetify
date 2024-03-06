@@ -56,15 +56,6 @@ function getWriterOpts () {
         discard = false
       })
 
-      if (context.owner === 'vuetifyjs' && context.repository === 'vuetify') {
-        const labsComponents = fs.readdirSync(path.join(process.cwd(), 'packages/vuetify/src/labs'), { withFileTypes: true })
-          .filter(dirent => dirent.isDirectory())
-          .map(dirent => dirent.name)
-        if (labsComponents.includes(commit.scope)) {
-          commit.title = ':test_tube: Labs'
-        }
-      }
-
       if (commit.revert) {
         commit.title = showAlways.revert
       } else if (Object.keys(showAlways).includes(commit.type)) {
@@ -80,6 +71,13 @@ function getWriterOpts () {
 
       if (commit.scope === '*') {
         commit.scope = ''
+      } else if (context.owner === 'vuetifyjs' && context.repository === 'vuetify') {
+        const labsComponents = fs.readdirSync(path.join(process.cwd(), 'packages/vuetify/src/labs'), { withFileTypes: true })
+          .filter(dirent => dirent.isDirectory())
+          .map(dirent => dirent.name)
+        if (labsComponents.includes(commit.scope)) {
+          commit.title = ':test_tube: Labs'
+        }
       }
 
       if (typeof commit.hash === 'string') {
