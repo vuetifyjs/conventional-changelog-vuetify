@@ -1,9 +1,11 @@
 'use strict'
 
+const fs = require('fs')
+const path = require('path')
 const compareFunc = require('compare-func')
 const Q = require('q')
-const readFile = Q.denodeify(require('fs').readFile)
-const resolve = require('path').resolve
+const readFile = Q.denodeify(fs.readFile)
+const resolve = path.resolve
 
 module.exports = Q.all([
   readFile(resolve(__dirname, './templates/template.hbs'), 'utf-8'),
@@ -23,7 +25,7 @@ module.exports = Q.all([
   })
 
 // const groupOrder = ['feat', 'fix', 'revert', 'refactor', 'perf', 'chore', 'test', 'docs', 'style', 'ci', 'build', 'Other Commits']
-const groupOrder = [':rocket: Features', ':wrench: Bug Fixes', ':fire: Performance Improvements', ':microscope: Code Refactoring', ':arrows_counterclockwise: Reverts', 'Other Commits']
+const groupOrder = [':rocket: Features', ':wrench: Bug Fixes', ':fire: Performance Improvements', ':microscope: Code Refactoring', ':arrows_counterclockwise: Reverts', ':test_tube: Labs', 'Other Commits']
 const showAlways = {
   feat: ':rocket: Features',
   fix: ':wrench: Bug Fixes',
@@ -53,6 +55,15 @@ function getWriterOpts () {
         note.scope = commit.scope === '*' ? '' : commit.scope
         discard = false
       })
+
+      if (context.owner === 'vuetifyjs' && context.repository === 'vuetify') {
+        const labsComponents = fs.readdirSync(path.join(process.cwd(), 'packages/vuetify/src/labs'), { withFileTypes: true })
+          .filter(dirent => dirent.isDirectory())
+          .map(dirent => dirent.name)
+        if (labsComponents.includes(commit.scope)) {
+          commit.title = ':test_tube: Labs'
+        }
+      }
 
       if (commit.revert) {
         commit.title = showAlways.revert
