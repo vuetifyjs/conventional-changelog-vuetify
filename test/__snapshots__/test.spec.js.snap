@@ -1,9 +1,27 @@
 // Vitest Snapshot v1
 
-exports[`vuetify preset > parses both default (Revert "<subject>") and custom (revert: <subject>) revert commits 1`] = ``;
+exports[`vuetify preset > parses both default (Revert "<subject>") and custom (revert: <subject>) revert commits 1`] = `
+## [1.2.1](https://github.com/vuetifyjs/conventional-changelog-vuetify/compare/v1.0.0...v1.2.1) (2025-03-18)
+
+
+### :rocket: Features
+
+* implementing [#5](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/5) by [@dlmr](https://github.com/dlmr) ([0000001](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000001)), closes [#10](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/10)
+* some more features ([0000002](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000002))
+
+
+### :arrows_counterclockwise: Reverts
+
+* feat: custom revert format ([0000003](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000003))
+* Revert "feat: default revert format" ([0000004](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000004))
+
+
+
+
+`;
 
 exports[`vuetify preset > should not discard commit if there is BREAKING CHANGE 1`] = `
-# 1.0.0 (2022-10-25)
+## 1.2.1 (2025-03-18)
 
 
 ### :rocket: Features
@@ -35,7 +53,7 @@ exports[`vuetify preset > should not discard commit if there is BREAKING CHANGE 
 * **ngOptions:** bad commit ([0000009](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000009))
 
 
-### Other Commmits
+### Other Commits
 
 * test(*): more tests ([0000010](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000010))
 * style(whitespace): make it easier to read ([0000011](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000011))
@@ -64,10 +82,22 @@ exports[`vuetify preset > should not discard commit if there is BREAKING CHANGE 
 
 `;
 
-exports[`vuetify preset > should only replace with link to user if it is an username 1`] = ``;
+exports[`vuetify preset > should only replace with link to user if it is an username 1`] = `
+## [1.2.1](https://github.com/vuetifyjs/conventional-changelog-vuetify/compare/v1.0.0...v1.2.1) (2025-03-18)
+
+
+### :rocket: Features
+
+* implementing [#5](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/5) by [@dlmr](https://github.com/dlmr) ([0000001](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000001)), closes [#10](https://github.com/vuetifyjs/conventional-changelog-vuetify/issues/10)
+* some more features ([0000002](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000002))
+
+
+
+
+`;
 
 exports[`vuetify preset > should remove the issues that already appear in the subject 1`] = `
-# 1.0.0 (2022-10-25)
+## 1.2.1 (2025-03-18)
 
 
 ### :rocket: Features
@@ -93,7 +123,7 @@ exports[`vuetify preset > should remove the issues that already appear in the su
 * **ngOptions:** bad commit ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))
 
 
-### Other Commmits
+### Other Commits
 
 * ci(travis): add TravisCI pipeline ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008))
 * build: first build setup ([0000009](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000009))
@@ -112,7 +142,7 @@ exports[`vuetify preset > should remove the issues that already appear in the su
 `;
 
 exports[`vuetify preset > should replace #[0-9]+ with GitHub issue URL 1`] = `
-# 1.0.0 (2022-10-25)
+## 1.2.1 (2025-03-18)
 
 
 ### :rocket: Features
@@ -137,7 +167,7 @@ exports[`vuetify preset > should replace #[0-9]+ with GitHub issue URL 1`] = `
 * **ngOptions:** bad commit ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
 
 
-### Other Commmits
+### Other Commits
 
 * ci(travis): add TravisCI pipeline ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))
 * build: first build setup ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008))
@@ -156,7 +186,7 @@ exports[`vuetify preset > should replace #[0-9]+ with GitHub issue URL 1`] = `
 `;
 
 exports[`vuetify preset > should replace @username with GitHub user URL 1`] = `
-# 1.0.0 (2022-10-25)
+## 1.2.1 (2025-03-18)
 
 
 ### :rocket: Features
@@ -183,7 +213,7 @@ exports[`vuetify preset > should replace @username with GitHub user URL 1`] = `
 * **ngOptions:** bad commit ([0000008](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000008))
 
 
-### Other Commmits
+### Other Commits
 
 * ci(travis): add TravisCI pipeline ([0000009](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000009))
 * build: first build setup ([0000010](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000010))
@@ -202,7 +232,7 @@ exports[`vuetify preset > should replace @username with GitHub user URL 1`] = `
 `;
 
 exports[`vuetify preset > should work if there is no semver tag 1`] = `
-# 1.0.0 (2022-10-25)
+## 1.2.1 (2025-03-18)
 
 
 ### :rocket: Features
@@ -226,7 +256,7 @@ exports[`vuetify preset > should work if there is no semver tag 1`] = `
 * **ngOptions:** bad commit ([0000005](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000005))
 
 
-### Other Commmits
+### Other Commits
 
 * ci(travis): add TravisCI pipeline ([0000006](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000006))
 * build: first build setup ([0000007](https://github.com/vuetifyjs/conventional-changelog-vuetify/commit/0000000000000000000000000000000000000007))

@@ -64,7 +64,7 @@ function getWriterOpts () {
         if (discard) return
         commit.title = showBreaking[commit.type]
       } else {
-        commit.title = 'Other Commmits'
+        commit.title = 'Other Commits'
         commit.subject = commit.header
         commit.scope = null
       }
