@@ -54,6 +54,10 @@
   "pnpm": {
     "overrides": {
       "git-dummy-commit>shelljs": "0.8.5"
-    }
-  }
+    },
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "packageManager": "pnpm@10.8.1"
 }
