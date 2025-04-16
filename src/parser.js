@@ -1,6 +1,4 @@
-'use strict'
-
-module.exports = {
+export const parserOpts = {
   headerPattern: /^(\w*)(?:\((.*)\))?: (.*)$/,
   headerCorrespondence: [
     'type',

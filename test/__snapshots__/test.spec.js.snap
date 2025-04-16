@@ -1,7 +1,7 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`vuetify preset > parses both default (Revert "<subject>") and custom (revert: <subject>) revert commits 1`] = `
-## [1.2.1](https://github.com/vuetifyjs/conventional-changelog-vuetify/compare/v1.0.0...v1.2.1) (2025-03-18)
+# [](https://github.com/vuetifyjs/conventional-changelog-vuetify/compare/v1.0.0...v) (2001-09-11)
 
 
 ### :rocket: Features
@@ -21,7 +21,7 @@ exports[`vuetify preset > parses both default (Revert "<subject>") and custom (r
 `;
 
 exports[`vuetify preset > should not discard commit if there is BREAKING CHANGE 1`] = `
-## 1.2.1 (2025-03-18)
+#  (2001-09-11)
 
 
 ### :rocket: Features
@@ -83,7 +83,7 @@ exports[`vuetify preset > should not discard commit if there is BREAKING CHANGE 
 `;
 
 exports[`vuetify preset > should only replace with link to user if it is an username 1`] = `
-## [1.2.1](https://github.com/vuetifyjs/conventional-changelog-vuetify/compare/v1.0.0...v1.2.1) (2025-03-18)
+# [](https://github.com/vuetifyjs/conventional-changelog-vuetify/compare/v1.0.0...v) (2001-09-11)
 
 
 ### :rocket: Features
@@ -97,7 +97,7 @@ exports[`vuetify preset > should only replace with link to user if it is an user
 `;
 
 exports[`vuetify preset > should remove the issues that already appear in the subject 1`] = `
-## 1.2.1 (2025-03-18)
+#  (2001-09-11)
 
 
 ### :rocket: Features
@@ -142,7 +142,7 @@ exports[`vuetify preset > should remove the issues that already appear in the su
 `;
 
 exports[`vuetify preset > should replace #[0-9]+ with GitHub issue URL 1`] = `
-## 1.2.1 (2025-03-18)
+#  (2001-09-11)
 
 
 ### :rocket: Features
@@ -186,7 +186,7 @@ exports[`vuetify preset > should replace #[0-9]+ with GitHub issue URL 1`] = `
 `;
 
 exports[`vuetify preset > should replace @username with GitHub user URL 1`] = `
-## 1.2.1 (2025-03-18)
+#  (2001-09-11)
 
 
 ### :rocket: Features
@@ -232,7 +232,7 @@ exports[`vuetify preset > should replace @username with GitHub user URL 1`] = `
 `;
 
 exports[`vuetify preset > should work if there is no semver tag 1`] = `
-## 1.2.1 (2025-03-18)
+#  (2001-09-11)
 
 
 ### :rocket: Features

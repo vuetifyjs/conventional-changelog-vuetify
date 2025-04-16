@@ -1,21 +1,27 @@
-import { describe, it, expect } from 'vitest'
-const conventionalChangelogCore = require('conventional-changelog-core')
-const preset = require('../')
-const gitDummyCommit = require('git-dummy-commit')
-const shell = require('shelljs')
-const betterThanBefore = require('better-than-before')()
-const preparing = betterThanBefore.preparing
+import { afterAll, describe, expect, it, vi } from 'vitest'
+import conventionalChangelogCore from 'conventional-changelog-core'
+import preset from '..'
+import gitDummyCommit from 'git-dummy-commit'
+import shell from 'shelljs'
+import BetterThanBefore from 'better-than-before'
+import fs from 'node:fs'
+import path from 'upath'
+import process from 'node:process'
+
+const { setups, preparing } = BetterThanBefore()
+
+vi.setSystemTime('2001-09-11')
 
 function streamToString (stream) {
   const chunks = []
   return new Promise((resolve, reject) => {
-    stream.on('data', (chunk) => chunks.push(Buffer.from(chunk)))
-    stream.on('error', (err) => reject(err))
+    stream.on('data', chunk => chunks.push(Buffer.from(chunk)))
+    stream.on('error', err => reject(err))
     stream.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')))
   })
 }
 
-betterThanBefore.setups([
+setups([
   () => {
     shell.config.resetForTesting()
     shell.cd(__dirname)
@@ -24,6 +30,16 @@ betterThanBefore.setups([
     shell.cd('tmp')
     shell.mkdir('git-templates')
     shell.exec('git init --template=./git-templates')
+    shell.exec('git remote add origin https://github.com/vuetifyjs/conventional-changelog-vuetify.git')
+
+    fs.writeFileSync(path.resolve(process.cwd(), './package.json'), JSON.stringify({
+      version: '1.0.0',
+      name: 'conventional-changelog-vuetify',
+      repository: {
+        type: 'git',
+        url: 'https://github.com/vuetifyjs/conventional-changelog-vuetify.git',
+      },
+    }))
 
     gitDummyCommit(['build: first build setup', 'BREAKING CHANGE: New build system.'])
     gitDummyCommit(['ci(travis): add TravisCI pipeline', 'BREAKING CHANGE: Continuously integrated.'])
@@ -62,6 +78,11 @@ betterThanBefore.setups([
     gitDummyCommit(['revert: feat: custom revert format', 'This reverts commit 5678.'])
   },
 ])
+
+afterAll(() => {
+  shell.cd(__dirname)
+  shell.rm('-rf', 'tmp')
+})
 
 expect.addSnapshotSerializer({
   serialize (val) {
