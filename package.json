@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-vuetify",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "conventional-changelog vuetify preset",
   "type": "module",
   "exports": "./src/index.js",
