@@ -1,6 +1,6 @@
-import path from 'upath'
 import fs from 'node:fs/promises'
 import compareFunc from 'compare-func'
+import path from 'upath'
 
 export async function createWriterOpts () {
   const [template, header, commit, footer] = await Promise.all([
