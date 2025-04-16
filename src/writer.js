@@ -1,13 +1,14 @@
-import fs from 'node:fs/promises'
+import fs from 'node:fs'
+import { readFile } from 'node:fs/promises'
 import compareFunc from 'compare-func'
 import path from 'upath'
 
 export async function createWriterOpts () {
   const [template, header, commit, footer] = await Promise.all([
-    fs.readFile(path.resolve(import.meta.dirname, './templates/template.hbs'), 'utf8'),
-    fs.readFile(path.resolve(import.meta.dirname, './templates/header.hbs'), 'utf8'),
-    fs.readFile(path.resolve(import.meta.dirname, './templates/commit.hbs'), 'utf8'),
-    fs.readFile(path.resolve(import.meta.dirname, './templates/footer.hbs'), 'utf8'),
+    readFile(path.resolve(import.meta.dirname, './templates/template.hbs'), 'utf8'),
+    readFile(path.resolve(import.meta.dirname, './templates/header.hbs'), 'utf8'),
+    readFile(path.resolve(import.meta.dirname, './templates/commit.hbs'), 'utf8'),
+    readFile(path.resolve(import.meta.dirname, './templates/footer.hbs'), 'utf8'),
   ])
 
   const writerOpts = getWriterOpts()
