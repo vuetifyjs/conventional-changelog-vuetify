@@ -1,3 +1,18 @@
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.vuetifyjs.com/docs/images/one/logos/vuetify-logo-dark.png">
+    <img alt="Vuetify" src="https://cdn.vuetifyjs.com/docs/images/one/logos/vuetify-logo-light.png" height="100">
+  </picture>
+</div>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/conventional-changelog-vuetify"><img src="https://img.shields.io/npm/v/conventional-changelog-vuetify.svg" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/conventional-changelog-vuetify"><img src="https://img.shields.io/npm/dm/conventional-changelog-vuetify.svg" alt="Downloads"></a>
+  <br>
+  <a href="https://github.com/vuetifyjs/conventional-changelog-vuetify/blob/master/LICENSE.md"><img src="https://img.shields.io/npm/l/conventional-changelog-vuetify.svg" alt="License"></a>
+  <a href="https://discord.gg/vuetify"><img src="https://img.shields.io/discord/1513968811047522396?logo=discord&logoColor=white&label=Discord&color=5865F2" alt="Discord"></a>
+</p>
+
 # [![NPM version][npm-image]][npm-url]
 
 > [conventional-changelog](https://github.com/ajoslin/conventional-changelog) [vuetify](https://github.com/vuetifyjs/vuetify) preset
